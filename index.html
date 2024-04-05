@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets.reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+
+    <title>Blog Cabin</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="main_title">
+                <h1>Welcome to the Blog Cabin</h1>
+            </div>
+            <section class="switcher">
+                <div class="light_mode">
+                    <p>Light Mode</p>
+                </div>
+                <label class="dark_switch">
+                    <input type="checkbox" id="dark_mode">
+                    <span class="slider"></span>
+                </label>
+                <div class="dark_mode">
+                    <p>Dark Mode</p>
+                </div>
+            </section>
+            </div>
+        </nav>
+    </header>
+    <!-- Form username, Title and whats on your mind-->
+    <section>
+        <form>
+            <h3>Enter Your Username:</h3>
+            <p>
+                <!-- Username Input -->
+                <label for="username">Name:</label>
+                <input class="username_input" id="user" type="text" placeholder="sample@user" />
+            </p>
+            <p>
+                <!-- Title of post input -->
+                <label for="title">Title of your post:</label>
+                <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
+            </p>
+            <p>
+                <!-- Content Input -->
+                <label for="content">What's on your mind today?</label>
+                <textarea class="content_text" type="text" id="content_input"
+                    placeholder="Your Content Here"></textarea>
+            </p>
+        </form>
+
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

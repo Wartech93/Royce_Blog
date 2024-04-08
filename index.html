@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets.reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shadows+Into+Light&display=swap"
@@ -18,50 +18,68 @@
 <body>
     <header>
         <!-- Navigation bar -->
-        <nav>
+        <nav class="container dark">
             <div class="main_title">
                 <h1>Welcome to the Blog Cabin</h1>
             </div>
-            <section class="switcher">
-                <div class="light_mode">
-                    <p>Light Mode</p>
+            <div>
+                <button id="back_button">Back</button>
+                <div class="row toggle">
+                    <div class="col">
+                        <p>DARK MODE</p>
+                    </div>
+                    <label class="switch col">
+                        <input type="checkbox" id="theme-switcher">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="col">
+                        <p>LIGHT MODE</p>
+                    </div>
                 </div>
-                <label class="dark_switch">
-                    <input type="checkbox" id="dark_mode">
-                    <span class="slider"></span>
-                </label>
-                <div class="dark_mode">
-                    <p>Dark Mode</p>
-                </div>
-            </section>
             </div>
         </nav>
     </header>
     <!-- Form username, Title and whats on your mind-->
     <section>
+        <div>
+            <img src="#" class="sample_image" id="img_one" />
+        </div>
         <form>
-            <h3>Enter Your Username:</h3>
-            <p>
-                <!-- Username Input -->
-                <label for="username">Name:</label>
-                <input class="username_input" id="user" type="text" placeholder="sample@user" />
-            </p>
-            <p>
-                <!-- Title of post input -->
-                <label for="title">Title of your post:</label>
-                <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
-            </p>
-            <p>
-                <!-- Content Input -->
-                <label for="content">What's on your mind today?</label>
-                <textarea class="content_text" type="text" id="content_input"
-                    placeholder="Your Content Here"></textarea>
-            </p>
+            <div>
+                <h3>Enter Your Username:</h3>
+                <p>
+                    <!-- Username Input -->
+                    <label for="username">Username:</label>
+                    <input class="username_input" id="user" type="text" placeholder="Sample@Username.com" />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <!-- Title of post input -->
+                    <label for="title">Title of your post:</label>
+                    <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
+                </p>
+            </div>
+            <div>
+                <p>
+                    <!-- Content Input -->
+                    <label for="content">What's on your mind today?</label>
+                    <textarea class="content_text" type="text" id="content_input"
+                        placeholder="Your Content Here"></textarea>
+                </p>
+                <div>
+                    <p id="timer"></p>
+                </div>
+            </div>
+            <button id="submit">Submit</button>
         </form>
 
     </section>
+    <footer>
+        <a href="https://wartech93.github.io/Royce_Portfolio/">My Portfolio</a>
+    </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
 
 </html>

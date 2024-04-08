@@ -1,2 +1,2 @@
-# Royce_Blog
+# The Blog Cabin
 My first blog

@@ -1,9 +1,20 @@
+
 .page_title {
     display: block;
+    text-align: center;
     font-size: 30px;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
+    background-color: lightgrey;
+    border: 5px solid black;
 }
+.click_back {
+  display: block;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+
 /* Dark Mode */
 .toggle {
     border-style: outset;
@@ -106,9 +117,11 @@
   }
   
   .row {
-    margin: 20px;
     display: flex;
+    margin-left: 83%;
+    margin-bottom: 0%;
   }
   .col {
     margin: 20px;
+    
   }

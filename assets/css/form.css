@@ -13,7 +13,8 @@ body {
 display: block;
 }
 .main-section {
-  display: inline-block;
+  display: block;
+  height: 100vh;
 }
 .main_title {
     display: block;

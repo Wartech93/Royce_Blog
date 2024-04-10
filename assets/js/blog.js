@@ -9,7 +9,7 @@ location.href="./index.html"
 const displayNewPost = function () {
     const stringContent = localStorage.getItem('allPosts');
     const newContent = JSON.parse(stringContent);
-    const spot = document.getElementById('#main_post');
+    const spot = document.querySelector('.posting');
 
     for (i = 0; i < newContent.length; i++) {
 //create a div element
@@ -44,6 +44,7 @@ div.append(content);
 div.append(author);
 
 //append div to page
+
 spot.append(div);
  };
 

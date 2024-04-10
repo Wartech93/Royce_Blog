@@ -58,9 +58,9 @@ SOFTWARE.
 ## Link
 
 GitHub Repository Link:
-
+https://github.com/Wartech93/Royce_Blog.git
 Live Site Link:
-
+https://wartech93.github.io/Royce_Blog/
 
 
 

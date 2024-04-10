@@ -24,7 +24,7 @@
   /* Dark Mode */
   .dark {
     background-color:#243447;
-    height: 100vh;
+   height: 100vh;
     color: #bebebe
    
   }
@@ -40,8 +40,9 @@
   /* Light Mode */
   .light {
     background-color: #f0ead6;
-    color: black;
     height: 100vh;
+    color: black;
+    
   }
   
   .light li a {

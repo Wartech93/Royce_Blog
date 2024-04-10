@@ -1,4 +1,3 @@
-
 .page_title {
     display: block;
     text-align: center;
@@ -124,4 +123,17 @@
   .col {
     margin: 20px;
     
+  }
+  .post {
+    display:block;
+    margin: 5%;
+    border: 5 px solid black;
+    border-radius: 5%;
+  }
+
+  .title {
+    text-decoration: underline;
+  }
+  .content {
+    text-indent:10px;
   }

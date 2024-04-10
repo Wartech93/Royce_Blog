@@ -9,6 +9,7 @@ location.href="./index.html"
 const displayNewPost = function () {
     const stringContent = localStorage.getItem('allPosts');
     const newContent = JSON.parse(stringContent);
+    const spot = document.getElementById('#main_post');
 
     for (i = 0; i < newContent.length; i++) {
 //create a div element
@@ -25,8 +26,9 @@ title.textContent = newContent[i].Title;
 //text content of p = newContent[i].contenet
 content.textContent = newContent[i].Content;
 //text content of h2 = newContent[i].username
-author.textContenet = newContent[i].Author;
+author.textContent = newContent[i].Author;
 
+div.setAttribute("class", "post");
 //add class to h1
 title.setAttribute("class", "title");
 //add class to p
@@ -42,15 +44,8 @@ div.append(content);
 div.append(author);
 
 //append div to page
-document.body.append(div);
+spot.append(div);
  };
-    console.log(newContent);
-};
-displayNewPost()
 
-
-
-
-
-
-
+}
+displayNewPost();

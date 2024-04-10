@@ -13,10 +13,8 @@ function timerError() {
         if (error >= 1) {
             console.log("if timerError");
             //decrement error counter
-            error--;
-           
+            error--;        
 
-            //reset form if a part is empty
 
         }
         else {
@@ -41,10 +39,11 @@ submitButton.addEventListener(`click`, function storeInfo(event) {
     }
     else {
         let userPost = {
-            userName: userName.value,
-            titleInput: titleInput.value,
-            contentInput: contentInput.value
+            Author: userName.value,
+            Title: titleInput.value,
+            Content: contentInput.value
            };
+           console.log(userPost)
         allPosts.push(userPost);
         localStorage.setItem('allPosts', JSON.stringify(allPosts));               
         location.href="./blog.html"

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shadows+Into+Light&display=swap"
@@ -16,13 +16,23 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navigation bar -->
-        <nav class="container dark">
-            <div class="main_title">
-                <h1>Welcome to the Blog Cabin</h1>
-            </div>
-            <div>
+    <main class="dark">
+        <header>
+            <!-- Navigation bar -->
+            <nav>
+                <div class="main_title">
+                    <h1>Welcome to the Blog Cabin</h1>
+                </div>
+
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Form username, Title and whats on your mind-->
+        <section class="main-section container light">
+
+            <!-- Theme Switcher -->
+            <div >
                 <div class="row toggle">
                     <div class="col">
                         <p>DARK MODE</p>
@@ -35,51 +45,46 @@
                         <p>LIGHT MODE</p>
                     </div>
                 </div>
+                <form class = "input_area">
+                    <div class="form_one">
+                        <h3>Enter Your Username:</h3>
+                        <p>
+                            <!-- Username Input -->
+                            <label for="user">Username:</label>
+                            <input class="username_input" id="user" type="text" placeholder="Sample@Username.com" />
+                        </p>
+                    </div>
+                    <div class="form_two">
+                        <p>
+                            <!-- Title of post input -->
+                            <label for="title_input">Title of your post:</label>
+                            <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
+                        </p>
+                    </div>
+                    <div class="form_three">
+                        <p>
+                            <!-- Content Input -->
+                            <label for="content_input">What's on your mind today?</label>
+                            <textarea class="content_text" type="text" id="content_input"
+                                placeholder="Your Content Here"></textarea>
+                        </p>
+                        <div>
+                            <!-- Error Message  -->
+                            <p id="timer"></p>
+                        </div>
+                    </div>
+                    <button class="submit-button" id="submit">Submit</button>
+                </form>
             </div>
-        </nav>
-    </header>
-    <!-- Form username, Title and whats on your mind-->
-    <section>
-        <div>
-            <img src="#" class="sample_image" id="img_one" />
-        </div>
-        <form>
-            <div>
-                <h3>Enter Your Username:</h3>
-                <p>
-                    <!-- Username Input -->
-                    <label for="user">Username:</label>
-                    <input class="username_input" id="user" type="text" placeholder="Sample@Username.com" />
-                </p>
-            </div>
-            <div>
-                <p>
-                    <!-- Title of post input -->
-                    <label for="title_input">Title of your post:</label>
-                    <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
-                </p>
-            </div>
-            <div>
-                <p>
-                    <!-- Content Input -->
-                    <label for="content_input">What's on your mind today?</label>
-                    <textarea class="content_text" type="text" id="content_input" placeholder="Your Content Here"></textarea>
-                </p>
-                <div>
-                    <p id="timer"></p>
-                </div>
-            </div>
-            <button id="submit">Submit</button>
-        </form>
-
+    </main>
     </section>
     <footer>
         <a href="https://wartech93.github.io/Royce_Portfolio/">My Portfolio</a>
     </footer>
 
-   
+
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
-    </body>
+</body>
 
 </html>

@@ -1,10 +1,11 @@
 body {
+  
   display: block;
     margin: 0px;
-    background-color: #243447;
-}
+    background-color: #aec786 ;
+    }
 .form_one {
-  display:block;
+  display: block;
   }
 .form_two {
   display:block;
@@ -16,6 +17,32 @@ display: block;
   display: block;
   height: 100vh;
 }
+/* moon styling */
+
+.enable {
+color: linear-gradient(gray, white);
+}
+
+.disable {
+  color: linear-gradient(black, gray);
+}
+
+.moon {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* main page styling */
+.on {
+  background-color: #aec786 ;
+  color: black;
+}
+
+.off {
+  background-color: #052912;
+  color: #bebebe;
+  }
 .main_title {
     display: block;
     font-size: 30px;
@@ -32,7 +59,7 @@ display: block;
 
 /* Dark Mode */
  .dark {
-  background-color:#243447;
+  background-color:#052912;
   color: #bebebe;
 } 
 
@@ -46,7 +73,7 @@ display: block;
 
 /* Light Mode */
  .light {
-  background-color: #f0ead6;
+  background-color:#aec786 ;
   color: black;
 
 } 
@@ -129,7 +156,8 @@ margin: 20px;
     color: red;
 }
 footer {
+  background-color: black;
     display: block;   
-    background-color: rgba(76, 175, 80, 0.15);
     text-align: center;
+    margin-top: 30%;
   }

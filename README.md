@@ -22,7 +22,9 @@ Click on the link and it will open in your browser!
 
 Type in a username, title and what you're feeling today and it will post to the blog page when you hit the submit button. On either page you can enable the dark mode by clicking the slider! On the posts page you can also click the back button to add another post!
 /
-
+![Screenshot1](/assets/Dark-Mode1.jpg)
+![Screenshot2](/assets/dark-mode2.jpg)
+![Screenshot3](/assets/dark-mode3.jpg)
     ```md
     ![alt text](assets/images/screenshot.png)
     ```

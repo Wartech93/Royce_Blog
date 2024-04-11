@@ -12,6 +12,15 @@
   margin-top: 5px;
   margin-left: 30px;
 }
+.on {
+  background-color: #aec786 ;
+  color: black;
+}
+
+.off {
+  background-color: #052912;
+  color: #bebebe;
+}
 
 
 /* Dark Mode */
@@ -125,11 +134,14 @@
     margin: 20px;
     
   }
-  .post {
+  .main-post {
     display:block;
     margin: 5%;
     border: 5 px solid black;
     border-radius: 5%;
+    }
+  .background-color {
+    background-color:#aec786;
   }
 
   .title {

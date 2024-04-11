@@ -15,53 +15,57 @@
     <title>Blog Cabin</title>
 </head>
 
-<body>
-    <main class="dark">
+<body class = "background">
+    <main>
         <header>
             <!-- Navigation bar -->
-            <nav>
+            <nav class = "background">
                 <div class="main_title">
-                    <h1>Welcome to the Blog Cabin</h1>
+                    <h1 class = "on" >Welcome to the Blog Cabin</h1>
                 </div>
 
-                </div>
-                </div>
+               
+
             </nav>
         </header>
         <!-- Form username, Title and whats on your mind-->
-        <section class="container light">
-
+        <section>
+            <div class = "moon-control">
+                    <span class="enable"></span>                   
+                </div>
             <!-- Theme Switcher -->
-            <div class = "main_section" >
-                <div class="row toggle ">
+            <div class="main_section light container">
+                <div class="row toggle container light">
                     <div class="col">
                         <p>LIGHT MODE</p>
                     </div>
-                    <label class="switch col">
+                    <label class="switch col container light">
                         <input type="checkbox" id="theme-switcher">
-                        <span class="slider round"></span>
+                        <span class="slider round on"></span>
                     </label>
                     <div class="col">
                         <p>DARK MODE</p>
                     </div>
                 </div>
-                <form class = "input_area">
-                    <div class="form_one">
-                        <h3>Enter Your Username:</h3>
+            </div>
+            <div class="on">
+                <form class="input_area background">
+                    <div class="form_one on">
+                        <h3>Enter Your Post:</h3>
                         <p>
                             <!-- Username Input -->
                             <label for="user">Username:</label>
                             <input class="username_input" id="user" type="text" placeholder="Sample@Username.com" />
                         </p>
                     </div>
-                    <div class="form_two">
+                    <div class="form_two on">
                         <p>
                             <!-- Title of post input -->
                             <label for="title_input">Title of your post:</label>
                             <input class="title_text" type="text" id="title_input" placeholder="Sample Title" />
                         </p>
                     </div>
-                    <div class="form_three">
+                    <div class="form_three on">
                         <p>
                             <!-- Content Input -->
                             <label for="content_input">What's on your mind today?</label>
@@ -76,6 +80,7 @@
                     <button class="submit-button" id="submit">Submit</button>
                 </form>
             </div>
+
     </main>
     </section>
     <footer>
